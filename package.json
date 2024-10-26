@@ -2,28 +2,28 @@
   "name": "chatbot-backend",
   "version": "1.0.0",
   "description": "Backend server for handling chatbot interactions.",
-  "main": "server.js", // The main file where your server code resides
+  "main": "chatbot.js", 
   "scripts": {
-    "start": "node server.js", // Start the server
-    "dev": "nodemon server.js", // Start the server in development mode
-    "test": "jest" // Command to run tests
+    "start": "node chatbot.js", 
+    "dev": "nodemon chatbot.js", 
+    "test": "jest" 
   },
   "author": "Mehar Kapoor",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2", // Web framework for Node.js
-    "body-parser": "^1.20.2", // Middleware for parsing request bodies
-    "cors": "^2.8.5", // Middleware for enabling CORS
-    "dotenv": "^16.0.3", // Loads environment variables from .env file
-    "axios": "^0.27.2", // HTTP client for making API requests (if needed)
-    "socket.io": "^4.6.0", // For real-time communication (optional, if using websockets)
-    "stripe": "^12.0.0" // Stripe payment processing library (if integrating payments)
+    "express": "^4.18.2", 
+    "body-parser": "^1.20.2", 
+    "cors": "^2.8.5", 
+    "dotenv": "^16.0.3", 
+    "axios": "^0.27.2", 
+    "socket.io": "^4.6.0", 
+    "stripe": "^12.0.0" 
   },
   "devDependencies": {
-    "nodemon": "^2.0.22", // Tool for automatically restarting the server during development
-    "jest": "^29.3.1" // JavaScript testing framework (if needed)
+    "nodemon": "^2.0.22", 
+    "jest": "^29.3.1" 
   },
   "engines": {
-    "node": ">=14.0.0" // Specify Node.js version compatibility
+    "node": ">=14.0.0" 
   }
 }
